@@ -10,10 +10,11 @@ package br.com.satc.personagens;
  * @author Markson
  */
 public abstract class Personagem implements IPersonagem {
-    
+
     private String nome;
     private int nivel;
     private int velocidadeMovimento;
+    private int experiencia;
     // --- Atributos Base --- //    
     private int forca; // Atq fisico e peso
     private int agilidade; // Vel atq e esquiv
@@ -37,7 +38,7 @@ public abstract class Personagem implements IPersonagem {
     // --- Multiplos --- //
     private int multiHP = 15;
     private int multiSP = 10;
-    
+
     public Personagem(String nome, int forca, int agilidade,
             int vitalidade, int inteligencia,
             int destreza, int sorte) {
@@ -60,7 +61,7 @@ public abstract class Personagem implements IPersonagem {
         this.setEsquiva(this.getAgilidade());
         this.setEsquivaSorte(this.getSorte());
         this.setPrecisao(this.getDestreza());
-        this.setVelocidadeAtaque(this.getDestreza(), this.getAgilidade());        
+        this.setVelocidadeAtaque(this.getDestreza(), this.getAgilidade());
     }
 
     /**
@@ -186,7 +187,7 @@ public abstract class Personagem implements IPersonagem {
      * @param hp the hp to set
      */
     public void setHp(int vitalidade) {
-        this.hp = vitalidade * multiHP;
+        this.hp = vitalidade * getMultiHP();
     }
 
     /**
@@ -200,7 +201,7 @@ public abstract class Personagem implements IPersonagem {
      * @param sp the sp to set
      */
     public void setSp(int inteligencia) {
-        this.sp = inteligencia * multiSP;
+        this.sp = inteligencia * getMultiSP();
     }
 
     /**
@@ -312,7 +313,7 @@ public abstract class Personagem implements IPersonagem {
      * @param velocidadeAtaque the velocidadeAtaque to set
      */
     public void setVelocidadeAtaque(int destreza, int agilidade) {
-        this.velocidadeAtaque = agilidade + (destreza / 2);
+        this.setVelocidadeAtaque(agilidade + (destreza / 2));
     }
 
     /**
@@ -384,5 +385,26 @@ public abstract class Personagem implements IPersonagem {
     public void setCarga(int forca) {
         this.carga = forca * 2;
     }
-    
+
+    /**
+     * @return the experiencia
+     */
+    public int getExperiencia() {
+        return experiencia;
+    }
+
+    /**
+     * @param experiencia the experiencia to set
+     */
+    public void setExperiencia(int experiencia) {
+        this.experiencia = experiencia;
+    }
+
+    /**
+     * @param velocidadeAtaque the velocidadeAtaque to set
+     */
+    public void setVelocidadeAtaque(int velocidadeAtaque) {
+        this.velocidadeAtaque = velocidadeAtaque;
+    }
+
 }
