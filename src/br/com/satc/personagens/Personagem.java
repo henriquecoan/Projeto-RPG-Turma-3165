@@ -19,7 +19,7 @@ public abstract class Personagem implements IPersonagem {
     private int forca; // Atq fisico e peso
     private int agilidade; // Vel atq e esquiv
     private int vitalidade; // hp e armadura base
-    private int inteligencia;// damo magico, sp, defm
+    private int inteligencia;// dano magico, sp, defm
     private int destreza;//dano de arco, hit, vel atq/2, reduz castime
     private int sorte;//critico, esq
     //--- Atributos --- //
