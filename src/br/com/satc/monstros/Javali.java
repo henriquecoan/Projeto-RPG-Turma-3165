@@ -21,7 +21,7 @@ public class Javali extends monstros{
     this.setExp(15);
     this.setLvl(1);
     this.setNome("Java Java");
-    this.setForca(2);
+    this.setForca(3);
     this.setAgilidade(2);
     this.setVitalidade(6);
     this.setInteligencia(1);
@@ -32,7 +32,7 @@ public class Javali extends monstros{
      
     public void atacar(Personagem personagem) {
           System.out.println("O Javali deu um ataque básico:");
-          personagem.receberDano(25);     }
+          personagem.receberDano(15);     }
 
     @Override
     public void bloquear() {

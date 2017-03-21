@@ -16,7 +16,7 @@ public class Esqueleto extends monstros{
 
     public Esqueleto(int drop, String descricao, int exp, int lvl, String nome, int forca, int agilidade, int vitalidade, int inteligencia, int destreza, int sorte) {
         super(drop, descricao, exp, lvl, nome, forca, agilidade, vitalidade, inteligencia, destreza, sorte);
-        this.setDrop(5);
+        this.setDrop(15);
         this.setDescricao("Um Esqueleto equipado com um arco e flecha");
     this.setExp(30);
     this.setLvl(2);

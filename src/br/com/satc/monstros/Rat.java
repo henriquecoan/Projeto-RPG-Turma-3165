@@ -17,7 +17,7 @@ public class Rat extends monstros{
     public Rat(int drop, String descricao, int exp, int lvl, String nome, int forca, int agilidade, int vitalidade, int inteligencia, int destreza, int sorte) {
         super(drop, descricao, exp, lvl, nome, forca, agilidade, vitalidade, inteligencia, destreza, sorte);
         this.setDrop(5);
-        this.setDescricao("Um Rat equipado com a peste negra");
+        this.setDescricao("Um Rato equipado com a peste negra");
     this.setExp(9);
     this.setLvl(1);
     this.setNome("Rato da Peste");
@@ -31,8 +31,8 @@ public class Rat extends monstros{
 
      
     public void atacar(Personagem personagem) {
-          System.out.println("O rat deu um ataque básico:");
-          personagem.receberDano(25);     }
+          System.out.println("O rato deu um ataque básico:");
+          personagem.receberDano(10);     }
 
     @Override
     public void bloquear() {

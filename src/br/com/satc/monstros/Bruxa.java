@@ -16,9 +16,9 @@ public class Bruxa extends monstros{
 
     public Bruxa(int drop, String descricao, int exp, int lvl, String nome, int forca, int agilidade, int vitalidade, int inteligencia, int destreza, int sorte) {
         super(drop, descricao, exp, lvl, nome, forca, agilidade, vitalidade, inteligencia, destreza, sorte);
-        this.setDrop(5);
-        this.setDescricao("Um Bruxa equipado com uma Vassoura");
-    this.setExp(150);
+        this.setDrop(70);
+        this.setDescricao("Uma Bruxa equipado com uma Vassoura");
+    this.setExp(360);
     this.setLvl(10);
     this.setNome("Bruxa do 71");
     this.setForca(15);
@@ -31,8 +31,8 @@ public class Bruxa extends monstros{
 
      
     public void atacar(Personagem personagem) {
-          System.out.println("O Goblin deu um ataque básico:");
-          personagem.receberDano(25);     }
+          System.out.println("A Bruxa deu um ataque básico:");
+          personagem.receberDano(100);     }
 
     @Override
     public void bloquear() {
