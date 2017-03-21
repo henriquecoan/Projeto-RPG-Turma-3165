@@ -407,4 +407,7 @@ public abstract class Personagem implements IPersonagem {
         this.velocidadeAtaque = velocidadeAtaque;
     }
 
+    public void receberDano(int dano) {
+        this.hp-=dano;
+    }
 }
