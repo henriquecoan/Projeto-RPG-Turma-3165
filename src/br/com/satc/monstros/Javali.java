@@ -20,7 +20,7 @@ public class Javali extends monstros{
         this.setDescricao("Um Javali equipado com fortes dentes");
     this.setExp(15);
     this.setLvl(1);
-    this.setNome("Java Java");
+    this.setNome("Java Monster");
     this.setForca(3);
     this.setAgilidade(2);
     this.setVitalidade(6);
