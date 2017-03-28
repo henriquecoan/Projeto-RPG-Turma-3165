@@ -21,7 +21,7 @@ public class Esqueleto extends monstros{
     this.setExp(30);
     this.setLvl(2);
     this.setNome("Esqueleton");
-    this.setForca(6);
+    this.setForca(4);
     this.setAgilidade(3);
     this.setVitalidade(11);
     this.setInteligencia(5);

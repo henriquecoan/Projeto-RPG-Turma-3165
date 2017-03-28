@@ -13,11 +13,20 @@ import java.util.Random;
  * @author Edutec
  */
 public class Bruxa extends monstros{
+public String magia;
 
+    public String getMagia() {
+        return magia;
+    }
+
+    public void setMagia(String magia) {
+        this.magia = magia;
+    }
     public Bruxa(int drop, String descricao, int exp, int lvl, String nome, int forca, int agilidade, int vitalidade, int inteligencia, int destreza, int sorte) {
         super(drop, descricao, exp, lvl, nome, forca, agilidade, vitalidade, inteligencia, destreza, sorte);
         this.setDrop(70);
         this.setDescricao("Uma Bruxa equipado com uma Vassoura");
+    this.setMagia("Solta uma poderosa bola de fogo que atinge todos os personagens.");
     this.setExp(360);
     this.setLvl(10);
     this.setNome("Bruxa do 71");
